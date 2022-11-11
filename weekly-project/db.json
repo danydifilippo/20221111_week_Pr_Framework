@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "email": "sdasd@example.it",
+      "password": "$2a$10$XEj0F0IzhMrAETKx3cFZMuPeVtWrjjw4H3rs.xlhsbE3.vrV8uiTW",
+      "name": "dsdas",
+      "id": 1
+    },
+    {
+      "email": "example@example.it",
+      "password": "$2a$10$y2z7uzh1vdfRRSnvVX9MUucSzWrGKh6lC2f0CVz3qBsDED449K9dO",
+      "name": "dsfdsfs",
+      "id": 2
+    },
+    {
+      "email": "danydifilippo@gmail.com",
+      "password": "$2a$10$X83cRV05a0Gag2umXkLpAuGVt9Rko/erCY/9ym7eUVnqObRQiR5bK",
+      "name": "dsadsd",
+      "id": 3
+    },
+    {
+      "email": "Jarvis_IT_27@maildrop.cc",
+      "password": "$2a$10$VSdAJrbgJdfqVlFD4i7nleYXQ5kY6Wj0ZX0n8AfcmvaiHlirJuGtq",
+      "name": "sdsfdfs",
+      "id": 4
+    },
+    {
+      "email": "danielepietro@hotmail.it",
+      "password": "$2a$10$.vf/bK0j1EU8ncOz8RLD7OnZDocMJFkSEMwoY2h3IiFSGwmQDgBNW",
+      "name": "Daniela Di Filippo",
+      "id": 5
+    },
+    {
+      "email": "danielepietro@gmail.com",
+      "password": "$2a$10$AFRP4mpOFQyLzlCKByiA4eFvHh3vSash5G6uVxOq53fKuquKdAaye",
+      "name": "Pietro Daniele",
+      "id": 6
+    },
+    {
+      "email": "info@tredaniele.it",
+      "password": "$2a$10$ZjbgVuWmoqkWif/CxgSYPeI9yw46PBIibBFhuU2xDnkwQbOPPJP7i",
+      "name": "Gianni Daniele",
+      "id": 7
+    }
+  ],
+  "movies": []
+}
