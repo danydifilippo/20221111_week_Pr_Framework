@@ -1,0 +1,13 @@
+<section id="mainPages" *ngIf="mainActive">
+  <ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink routerLink="home">Home</a>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink routerLink="music">My Music</a>
+    </li>
+  </ul>
+  <p *ngIf="profile"><span>Profilo di:</span> {{ n.user.name }}</p>
+  <!-- <p *ngIf="enter" routerLink="login">Fai il login</p>
+  <div [ngbNavOutlet]="nav"></div> -->
+</section>

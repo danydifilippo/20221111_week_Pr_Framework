@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  urlApi : "http://localhost:3000/"
+  urlApi : "http://localhost:3000/",
+  urlApiMusic : "https://striveschool-api.herokuapp.com/api/deezer/search?q="
 };
 
 /*

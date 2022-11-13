@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { NavbarPage } from 'src/app/pages/navbar/navbar.page';
 import { AuthService } from '../auth.service';
-import { Users } from '../Users';
+
+
 
 @Component({
   templateUrl: './login.page.html',
@@ -10,30 +12,44 @@ import { Users } from '../Users';
 })
 export class LoginPage implements OnInit {
 
+  user:any;
   error: undefined;
+  advice: boolean = false
+  welcome: boolean = false
+  alertType:string = 'success'
+  name:any
 
-  constructor(private authservice: AuthService, private router:Router) { }
+
+  constructor(private authservice: AuthService, private router:Router ) { }
 
   ngOnInit(): void {
   }
 
-  onSubmit(form: NgForm):void{
-    const email = form.value.email
+  ngAfterContentInit ():void {
+    this.user = localStorage.getItem('userLogin')
+    this.name = JSON.parse(this.user)
+    console.log(this.name.user.name);
+  }
+
+  onSubmit(form: NgForm){
     this.authservice.signin(form.value).subscribe(
       data => {
         console.log(data);
         this.error = undefined
         localStorage.setItem('userLogin', JSON.stringify(data))
-        console.log(email);
+        this.welcome = true
+        setTimeout(() => {
+          this.router.navigate(['/navbar'])
+        }, 3000);
 
-        this.router.navigate(['/home'])
       },
       err => {
         console.log(err);
-        this.error = err.error
-        alert(this.error)
+        this.error = err.error;
+        this.advice = true
       }
     );
   }
+  }
 
-}
+

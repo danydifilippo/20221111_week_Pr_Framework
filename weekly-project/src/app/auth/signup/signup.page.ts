@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Form, NgForm } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
-import { Users } from '../Users';
 
 @Component({
   templateUrl: './signup.page.html',
@@ -21,7 +20,9 @@ export class SignupPage implements OnInit {
     this.authservice.signup(form.value).subscribe(
       data => {
         console.log(data);
-        this.router.navigate(['/login'])
+        this.error = undefined;
+        this.router.navigate(['/login']);
+        localStorage.removeItem('userlogin')
       },
       err => {
         console.log(err);

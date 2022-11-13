@@ -17,4 +17,12 @@ export class AuthService {
   signin(obj: Users){
     return this.http.post(environment.urlApi + 'login', obj)
   }
+
+  getUser(){
+    return this.http.get<Users[]>(environment.urlApi + 'users')
+  }
+
+  getmusic(artist:string){
+    return this.http.get(environment.urlApiMusic+artist.toUpperCase)
+  }
 }

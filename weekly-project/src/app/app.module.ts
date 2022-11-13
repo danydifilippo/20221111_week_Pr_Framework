@@ -6,14 +6,18 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthModule } from './auth/auth.module';
 import { HomePage } from './pages/home/home.page';
-import { MoviesPage } from './pages/movies/movies.page';
 import { HttpClientModule } from '@angular/common/http';
+import { MusicPage } from './pages/music/music.page';
+import { NavbarPage } from './pages/navbar/navbar.page';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePage,
-    MoviesPage
+    MusicPage,
+    NavbarPage
   ],
   imports: [
     BrowserModule,
@@ -25,4 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+
+export class AppModule {
+
+}

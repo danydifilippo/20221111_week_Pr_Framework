@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
-  templateUrl: './movies.page.html',
-  styleUrls: ['./movies.page.scss']
+  templateUrl: './music.page.html',
+  styleUrls: ['./music.page.scss']
 })
-export class MoviesPage implements OnInit {
+export class MusicPage implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }
