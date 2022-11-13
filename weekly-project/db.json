@@ -53,6 +53,12 @@
       "password": "$2a$10$fS.T.pkYbTFsuOZ3maQAW.UqGd8f1HQ9HkINpo0dZPDqDNFfaJ3H2",
       "name": "Mario Rossi",
       "id": 9
+    },
+    {
+      "email": "paolo@example.it",
+      "password": "$2a$10$J66.UaAKj0fAIFxJgr0cGuLEFL9GwcEfF5o1t38c6b8EP7vslZhhu",
+      "name": "Paolo Rossi",
+      "id": 10
     }
   ]
 }

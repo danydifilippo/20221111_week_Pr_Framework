@@ -1,4 +1,4 @@
-<section class="text-center container-fluid" cz-shortcut-listen="true">
+<section class="text-center container-fluid" cz-shortcut-listen="true" id="log">
   <h1>M</h1>
   <h4>Musicflix</h4>
   <main class="form-signin m-auto">
@@ -11,7 +11,7 @@
             {{error}}</ngb-alert
           >
           <ngb-alert [type]="alertType" *ngIf="welcome" [dismissible]="true"
-            ><strong> Ciao {{name.user.name}} </strong><br />
+            ><strong>Login effettuato con successo</strong><br />
             Bentornato nella nostra community...</ngb-alert
           >
         </p>

@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     path:'navbar',
-    component:NavbarPage,
+    component:NavbarPage
   },
   {
     path:'**',

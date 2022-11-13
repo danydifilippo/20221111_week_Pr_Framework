@@ -1,4 +1,5 @@
 import { AfterContentInit, AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Music } from '../Music';
 import { NavServiceService } from './nav-service.service';
 
@@ -46,6 +47,11 @@ export class NavbarPage implements OnInit, AfterContentInit, AfterViewInit {
   ngAfterViewInit(): void {
       this.artistCard = new Music(this.field?.nativeElement.src,this.artistName?.nativeElement.textContent,
         this.song?.nativeElement.src,this.title?.nativeElement.textContent)
+      }
+
+
+      addList(){
+        this.artistFavCard=this.artistCard
       }
 
 

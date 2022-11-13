@@ -17,12 +17,12 @@ export class SignupPage implements OnInit {
   }
 
   onSubmit(form: NgForm):void{
+    localStorage.removeItem('userlogin')
     this.authservice.signup(form.value).subscribe(
       data => {
         console.log(data);
         this.error = undefined;
         this.router.navigate(['/login']);
-        localStorage.removeItem('userlogin')
       },
       err => {
         console.log(err);

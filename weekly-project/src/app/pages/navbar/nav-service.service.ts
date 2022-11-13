@@ -11,7 +11,7 @@ export class NavServiceService {
   constructor(private http:HttpClient) { }
 
   postMusic(obj:Music){
-    return this.http.put<Music[]>(environment.urlApi+'music/',obj)
+    return this.http.post<Music[]>(environment.urlApi+'navbar',obj)
   }
 
   getArtist(artist:string){

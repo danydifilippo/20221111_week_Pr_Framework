@@ -43,8 +43,10 @@
                 </audio>
                 <button
                   type="submit"
+                  #thisId
+                  id="{{song.id}}"
                   class="btn btn-primary"
-                  (click)="addList()"
+                  onclick="addList()"
                 >
                   Aggiungi a Playlist
                 </button>
@@ -62,19 +64,19 @@
             <div
               class="card bg-transparent mt-3 p-2 border-0"
               style="width: 18rem"
-              *ngFor="let favsong of newsong"
+              *ngFor="let item of artistFavCard"
             >
               <img
                 #field
-                src="{{favsong.artist.picture_medium}}"
+                src="{{item.image}}"
                 class="card-img-top rounded-circle"
                 alt="artist-cover"
               />
               <div class="card-body">
-                <h3 class="card-title" #title>{{favsong.title}}</h3>
-                <h5 class="card-text" #artistName>{{favsong.artist.name}}</h5>
+                <h3 class="card-title" #title>{{item.title}}</h3>
+                <h5 class="card-text" #artistName>{{item.name}}</h5>
                 <audio controls style="width: 100%">
-                  <source #song src="{{favsong.preview}}" type="audio/ogg" />
+                  <source #song src="{{item.preview}}" type="audio/ogg" />
                 </audio>
               </div>
             </div>
