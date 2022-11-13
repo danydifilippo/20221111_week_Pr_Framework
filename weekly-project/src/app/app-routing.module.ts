@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from './auth/auth.guard';
 import { AuthModule } from './auth/auth.module';
 import { HomePage } from './pages/home/home.page';
 import { MusicPage } from './pages/music/music.page';
@@ -15,13 +14,11 @@ const routes: Routes = [
   },
   {
     path:'home',
-    component:HomePage,
-    canActivate:[AuthGuard]
+    component:HomePage
   },
   {
     path:'music',
-    component:MusicPage,
-    canActivate:[AuthGuard]
+    component:MusicPage
   },
   {
     path:'navbar',

@@ -2,8 +2,9 @@
   margin: auto;
   padding: 2em;
   max-width: 1200px;
-  ul{
+  nav{
     display: inline-flex;
+    align-items: baseline;
   }
   p{
     display: inline;

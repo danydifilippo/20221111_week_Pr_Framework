@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginPage } from 'src/app/auth/login/login.page';
 
 @Component({
   selector: 'app-navbar',

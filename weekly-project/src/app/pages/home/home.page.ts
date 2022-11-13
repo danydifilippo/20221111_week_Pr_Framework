@@ -1,6 +1,4 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
 
 @Component({
   templateUrl: './home.page.html',
@@ -8,9 +6,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-
-
-  constructor(private http:HttpClient) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

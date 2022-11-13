@@ -5,19 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthModule } from './auth/auth.module';
-import { HomePage } from './pages/home/home.page';
 import { HttpClientModule } from '@angular/common/http';
-import { MusicPage } from './pages/music/music.page';
 import { NavbarPage } from './pages/navbar/navbar.page';
+import { HomePage } from './pages/home/home.page';
+import { MusicPage } from './pages/music/music.page';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarPage,
     HomePage,
-    MusicPage,
-    NavbarPage
+    MusicPage
   ],
   imports: [
     BrowserModule,
