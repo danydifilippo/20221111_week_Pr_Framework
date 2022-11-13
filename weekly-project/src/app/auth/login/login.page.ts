@@ -1,7 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterContentInit, Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { NavbarPage } from 'src/app/pages/navbar/navbar.page';
 import { AuthService } from '../auth.service';
 
 
@@ -10,7 +9,7 @@ import { AuthService } from '../auth.service';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss']
 })
-export class LoginPage implements OnInit {
+export class LoginPage implements OnInit, AfterContentInit {
 
   user:any;
   error: undefined;
@@ -18,6 +17,7 @@ export class LoginPage implements OnInit {
   welcome: boolean = false
   alertType:string = 'success'
   name:any
+
 
 
   constructor(private authservice: AuthService, private router:Router ) { }
@@ -30,6 +30,7 @@ export class LoginPage implements OnInit {
     this.name = JSON.parse(this.user)
     console.log(this.name.user.name);
   }
+
 
   onSubmit(form: NgForm){
     this.authservice.signin(form.value).subscribe(

@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthModule } from './auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarPage } from './pages/navbar/navbar.page';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -20,7 +21,8 @@ import { NavbarPage } from './pages/navbar/navbar.page';
     AppRoutingModule,
     NgbModule,
     AuthModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -28,5 +30,7 @@ import { NavbarPage } from './pages/navbar/navbar.page';
 
 
 export class AppModule {
+
+
 
 }

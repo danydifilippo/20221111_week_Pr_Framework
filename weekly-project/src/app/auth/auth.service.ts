@@ -22,7 +22,5 @@ export class AuthService {
     return this.http.get<Users[]>(environment.urlApi + 'users')
   }
 
-  getmusic(artist:string){
-    return this.http.get(environment.urlApiMusic+artist.toUpperCase)
-  }
+
 }
